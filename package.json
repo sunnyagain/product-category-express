@@ -1,0 +1,36 @@
+{
+  "name": "product-categories-rest-express-example",
+  "version": "1.0.0",
+  "description": "Project demonstrate Express based API for product and categories CRUD operations",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "test"
+  },
+  "author": "Suresh Kamble <me@sunnyagian.in>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.5",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/register": "^7.11.5",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "awilix": "^4.2.6",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "glob-promise": "^3.4.0",
+    "lodash": "^4.17.20",
+    "mongoose": "^5.10.2",
+    "morgan": "^1.10.0",
+    "paginate-mongoose-data": "^2.0.1"
+  }
+}

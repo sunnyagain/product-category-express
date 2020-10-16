@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+    db1:
+        image: mongo
+        ports:
+            - 27017:27017
+        networks:
+            - product-categories-rest
+networks:
+    product-categories-rest:

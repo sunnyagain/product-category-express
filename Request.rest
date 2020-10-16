@@ -1,0 +1,83 @@
+# Done | Get list of products
+GET http://localhost:3000/products/
+
+# Done | Get list of products by categories
+GET http://localhost:3000/products/?category[_id]=5f8886711f472a92b5219e5d
+
+
+# Get specific product 
+GET http://localhost:3000/products/5f892b6bfedb75cf01460ca3
+
+# Done | Create Prodcut
+POST http://localhost:3000/products/
+Content-type: application/json
+
+{
+    "Name": "X Product {{$randomInt 0 1000}}",
+    "Brand": "xyz",
+    "Sku": "123",
+    "Price": 1200,
+    "Categories": [
+        {
+            "Name": "test category {{$randomInt 0 1000}}",
+            "Description": "this is test category"
+        },
+        {
+            "Name": "test category 11 {{$randomInt 0 1000}}",
+            "Description": "this is test category"
+        }
+    ]
+}
+
+# DONE | Update Product
+PUT http://localhost:3000/products/5f892b6bfedb75cf01460ca3
+Content-Type: application/json
+
+{
+    "Name": "X Product v {{$randomInt 0 1000}}",
+    "Brand": "xyz",
+    "Sku": "123",
+    "Price": 1200,
+    "Categories": [
+        {
+            "Name": "test category x {{$randomInt 0 1000}}",
+            "Description": "this is test category"
+        },
+        {
+            "Name": "test category x update {{$randomInt 0 1000}}",
+            "Description": "this is test category"
+        }
+    ]
+}
+
+# @TODO | Delete Product
+DELETE http://localhost:3000/products/:id
+
+# @TODO | Get all categories product belongs to
+GET http://localhost:3000/products/5f8881cca0a9797f277597f2/categories
+
+
+# DONE | Get all categories
+GET http://localhost:3000/categories/
+
+# DONE| Get specific category 
+GET http://localhost:3000/categories/5f8881cca0a9797f277597f4
+
+
+# DONE | Create category
+POST http://localhost:3000/categories/
+Content-Type: application/json
+
+{
+    "Name": "Category {{$randomInt 0 1000}}",
+    "Description": "test category description",
+    "ParentCategory": {
+        "_id": "5f8881e0a0a9797f277597f8"
+    }
+}
+
+# @TODO | Update category
+PUT http://localhost:3000/categories/:id
+
+# @TODO | Delete category
+DELETE  http://localhost:3000/categories/:id
