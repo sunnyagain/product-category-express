@@ -9,6 +9,9 @@ The Task is Building a RESTful APIs from scratch using Express - Node.js.
 - [X] The Entities must get saved in MongoDb and be retrieved via POST and GET Methods respectively.
 
 
+[![deepcode](https://www.deepcode.ai/api/gh/badge?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF0Zm9ybTEiOiJnaCIsIm93bmVyMSI6InN1bm55YWdhaW4iLCJyZXBvMSI6InByb2R1Y3QtY2F0ZWdvcnktZXhwcmVzcyIsImluY2x1ZGVMaW50IjpmYWxzZSwiYXV0aG9ySWQiOjIzOTk0LCJpYXQiOjE2MDMyNTU4MzR9.hQ-_Ihpvv1jaQLY1VBGKV_1X7d1pdIwlHQmxjwVene0)](https://www.deepcode.ai/app/gh/sunnyagain/product-category-express/_/dashboard?utm_content=gh%2Fsunnyagain%2Fproduct-category-express)
+
+
 ## Required 
 
 - You need to design a proper Mongodb data model and create APIs to
